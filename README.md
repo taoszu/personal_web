@@ -9,4 +9,4 @@
 * 将网站部署到Github提供的服务器Github Page。
 
 ## 域名 🔗
-[少年阿涛](taoszu.cn)
+[少年阿涛](https://taoszu.cn)
