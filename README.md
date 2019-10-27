@@ -1,16 +1,12 @@
-# personal_web
+## 个人网站 🌐
+使用Flutter开发的个人项目，可以运行在Android，iOS, web三端，实现真正完全的跨平台。
 
-个人网站
 
-## Getting Started
+## 自动化部署 🔨
+* 构建打包flutter web的Github Actions
+* master分支提交代码，触发flutter web的自动化部署
+* 将生成的网站资源文件推到gh_pages分支
+* 将网站部署到Github提供的服务器Github Page。
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 域名 🔗
+[少年阿涛](taoszu.cn)
