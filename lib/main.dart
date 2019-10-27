@@ -1,5 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart' hide Banner, BannerLocation;
 import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:universal_html/prefer_universal/html.dart' as html;
+import 'package:personal_web/widget/banner.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,17 +38,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-            width: double.infinity,
-            child: ClipRect(
-              child: Banner(
-                  message: "程序员",
-                  location: BannerLocation.topEnd,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[_buildAvatarInfo(), _buildAppList()],
-                  )),
-            )));
+        body: SafeArea(
+            child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+                child: ClipRect(
+                  child: Banner(
+                      message: "程序员",
+                      location: BannerLocation.topEnd,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[_buildAvatarInfo(), _buildAppList()],
+                      )),
+                ))));
   }
 
   _buildAvatarInfo() {
@@ -52,7 +57,7 @@ class _HomePageState extends State<HomePage> {
     return Column(
       children: <Widget>[
         Padding(
-            padding: EdgeInsets.only(top: 24),
+            padding: EdgeInsets.only(top: 36),
             child: CircleAvatar(
               radius: size / 2,
               backgroundImage:
@@ -78,7 +83,7 @@ class _HomePageState extends State<HomePage> {
         path: "images/ic_juejin.png",
         name: "掘金社区",
         subTitle: "浏览我的最新博客",
-        link: "https://juejin.im/user/590943745c497d0058547b57"));
+        link: "https://juejin.im/user/590943745c497d0058547b57/posts"));
 
     List<Widget> widgets = [];
     apps.forEach((app) {
@@ -87,14 +92,14 @@ class _HomePageState extends State<HomePage> {
         child: Center(
             child: ListTile(
           leading: CircleAvatar(
-            backgroundColor: Colors.white,
-            backgroundImage: Image.asset(app.path, width: 32, height: 32).image,
+            backgroundColor: Colors.transparent,
+            backgroundImage: Image.asset(app.path, width: 28, height: 28).image,
           ),
-          title: Text(app.name, style: TextStyle(fontSize: 18)),
-          subtitle: Text(app.subTitle, style: TextStyle(fontSize: 14)),
+          title: Text(app.name),
+          subtitle: Text(app.subTitle),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
-
+            _launchUrl(app.link);
           },
         )),
       ));
@@ -104,6 +109,16 @@ class _HomePageState extends State<HomePage> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: widgets,
     );
+  }
+
+  _launchUrl(String url) async {
+    if (kIsWeb) {
+      html.window.open(url, "");
+    } else {
+      if (await canLaunch(url)) {
+        await launch(url);
+      }
+    }
   }
 }
 
