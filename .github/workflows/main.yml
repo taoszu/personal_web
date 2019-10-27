@@ -19,7 +19,7 @@ jobs:
     - run: flutter upgrade
     - run: flutter config --enable-web
     - run: flutter build web
-    - run: cp ../../CNAME ./build/web/CNAME
+    - run: cp ./CNAME ./build/web/CNAME
       
     - name: deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
