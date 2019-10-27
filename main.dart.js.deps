@@ -1,6 +1,7 @@
 file:///home/runner/work/personal_web/personal_web/.dart_tool/flutter_build/41d274a81c1261296bb37c7d7ede0103/main.dart
 file:///home/runner/work/personal_web/personal_web/.packages
 file:///home/runner/work/personal_web/personal_web/lib/main.dart
+file:///home/runner/work/personal_web/personal_web/lib/widget/banner.dart
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/collection.dart
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/algorithms.dart
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/canonicalized_map.dart
@@ -23,6 +24,11 @@ file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/wrappers.dart
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/meta-1.1.7/lib/meta.dart
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6/lib/typed_buffers.dart
+file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/universal_html-1.1.6/lib/prefer_universal/html.dart
+file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/universal_html-1.1.6/lib/src/_sdk/html.dart
+file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.2.5/lib/url_launcher.dart
+file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-1.0.1/lib/method_channel_url_launcher.dart
+file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-1.0.1/lib/url_launcher_platform_interface.dart
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/hash.dart
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/aabb2.dart
 file:///opt/hostedtoolcache/flutter/1.9.1-hotfix.6-stable/x64/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/aabb3.dart
