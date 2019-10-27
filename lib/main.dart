@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
     apps.add(App(
         path: "images/ic_github.png",
         name: "Github",
-        subTitle: "查看我的开源项目",
+        subTitle: "关注我的开源项目",
         link: "https://github.com/taoszu"));
 
     apps.add(App(
