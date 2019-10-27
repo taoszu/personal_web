@@ -76,13 +76,13 @@ class _HomePageState extends State<HomePage> {
     apps.add(App(
         path: "images/ic_github.png",
         name: "Github",
-        subTitle: "关注我的开源项目",
+        subTitle: "关注我的开源项目 👨‍💻",
         link: "https://github.com/taoszu"));
 
     apps.add(App(
         path: "images/ic_juejin.png",
         name: "掘金社区",
-        subTitle: "浏览我的最新博客",
+        subTitle: "浏览我的最新博客 ✍",
         link: "https://juejin.im/user/590943745c497d0058547b57/posts"));
 
     List<Widget> widgets = [];
